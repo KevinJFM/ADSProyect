@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kevin\\Desktop\\Guias AS\\ADSProyect\\ADSProyect\\ADSProyect.csproj",
+      "projectUniqueName": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\ADSProyect.csproj",
       "projectName": "ADSProyect",
-      "projectPath": "C:\\Users\\kevin\\Desktop\\Guias AS\\ADSProyect\\ADSProyect\\ADSProyect.csproj",
+      "projectPath": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\ADSProyect.csproj",
       "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kevin\\Desktop\\Guias AS\\ADSProyect\\ADSProyect\\obj\\",
+      "outputPath": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -460,6 +460,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3dudaw/lElYWS/M8kUV+Q1WlRzlcrhWzV2d7BKR9nHXtPkh+7eeS/OcztnRvNuGCHst9FwaFGopLdRgMOTv9og==",
+  "dgSpecHash": "vURC5L+aAGfiqWQTi3KGc2RSWs843meAs2Af/7yV6BmOpFw3DY3GLNXNUW0Po/0rfTd9V1IDAx/1pdLNqlzt5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kevin\\Desktop\\Guias AS\\ADSProyect\\ADSProyect\\ADSProyect.csproj",
+  "projectFilePath": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\ADSProyect.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kevin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\kevin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

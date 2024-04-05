@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\repositories\\materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\repositories\\materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\interfaces\\imateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\interfaces\\imateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\models\\carrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\models\\carrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\controllers\\carrerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\controllers\\carrerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\interfaces\\icarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\interfaces\\icarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|c:\\users\\kevin\\documents\\2024\\guias as\\guia 1\\adsproyect\\adsproyect\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9384E6-5341-452D-8C6E-640CA7D5899B}|ADSProyect\\ADSProyect.csproj|solutionrelative:adsproyect\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICarrera.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Interfaces\\ICarrera.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Interfaces\\ICarrera.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Interfaces\\ICarrera.cs",
+              "RelativeToolTip": "ADSProyect\\Interfaces\\ICarrera.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarrerasController.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Controllers\\CarrerasController.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Controllers\\CarrerasController.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Controllers\\CarrerasController.cs",
+              "RelativeToolTip": "ADSProyect\\Controllers\\CarrerasController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Carrera.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Models\\Carrera.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Models\\Carrera.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Models\\Carrera.cs",
+              "RelativeToolTip": "ADSProyect\\Models\\Carrera.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Program.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Program.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Program.cs",
+              "RelativeToolTip": "ADSProyect\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MateriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Repositories\\MateriaRepository.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Repositories\\MateriaRepository.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Repositories\\MateriaRepository.cs",
+              "RelativeToolTip": "ADSProyect\\Repositories\\MateriaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MateriasController.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Controllers\\MateriasController.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Controllers\\MateriasController.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Controllers\\MateriasController.cs",
+              "RelativeToolTip": "ADSProyect\\Controllers\\MateriasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMateria.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Interfaces\\IMateria.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Interfaces\\IMateria.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Interfaces\\IMateria.cs",
+              "RelativeToolTip": "ADSProyect\\Interfaces\\IMateria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Materia.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Models\\Materia.cs",
+              "RelativeDocumentMoniker": "ADSProyect\\Models\\Materia.cs",
+              "ToolTip": "C:\\Users\\kevin\\Documents\\2024\\Guias AS\\Guia 1\\ADSProyect\\ADSProyect\\Models\\Materia.cs",
+              "RelativeToolTip": "ADSProyect\\Models\\Materia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T04:28:26.804Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
