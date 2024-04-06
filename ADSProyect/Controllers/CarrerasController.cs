@@ -26,6 +26,7 @@ namespace ADSProyect.Controllers
                 try
                 {
                     int contador = this.carrera.AgregarCarrera(carrera);
+
                     if (contador > 0)
                     {
                     pCodRespuesta = COD_EXITO;

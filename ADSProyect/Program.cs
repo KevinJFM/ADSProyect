@@ -20,6 +20,8 @@ builder.Services.AddSingleton<IMateria, MateriaRepository>();
 
 builder.Services.AddSingleton<IProfesor, ProfesorRepository>();
 
+builder.Services.AddSingleton<IGrupo, GrupoRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
