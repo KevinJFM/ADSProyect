@@ -40,7 +40,7 @@ namespace ADSProyect.Controllers
                 }
                     return Ok(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw;
                 }
@@ -66,7 +66,7 @@ namespace ADSProyect.Controllers
                 }
                     return Ok(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw;
                 }
@@ -92,7 +92,7 @@ namespace ADSProyect.Controllers
                 }
                 return Ok(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
@@ -116,7 +116,7 @@ namespace ADSProyect.Controllers
                     return NotFound(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
@@ -130,7 +130,7 @@ namespace ADSProyect.Controllers
                     List<Carrera> lstCarreras = this.carrera.ConsultarCarreras();
                     return Ok(lstCarreras);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw;
                 }

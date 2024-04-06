@@ -150,11 +150,11 @@ namespace ADSProyect.Controllers
 
         [HttpGet("obtenerEstudiantes")]
 
-        public ActionResult<Estudiante> ObtenerEstudiantes(int idEstudiante)
+        public ActionResult<Estudiante> ObtenerTodosLosEstudiantes(int idEstudiante)
         {
             try
             {
-               List<Estudiante> lstEstudiantes = this.estudiante.ObtenerTodosLosEstudinates();
+               List<Estudiante> lstEstudiantes = this.estudiante.ObtenerTodosLosEstudiantes();
 
                return Ok(lstEstudiantes);
 

@@ -79,7 +79,7 @@ namespace ADSProyect.Repositories
 
         }
 
-        public List<Estudiante> ObtenerTodosLosEstudinates()
+        public List<Estudiante> ObtenerTodosLosEstudiantes()
         {
             try 
             {

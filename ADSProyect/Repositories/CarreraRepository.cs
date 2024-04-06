@@ -23,9 +23,9 @@ namespace ADSProyect.Repositories
                 lstCarreras.Add(carrera);
                 return carrera.IdCarrera;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw ;
             }
         }
 
@@ -35,9 +35,9 @@ namespace ADSProyect.Repositories
             {
                 return lstCarreras;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -48,9 +48,9 @@ namespace ADSProyect.Repositories
                 Carrera carrera = lstCarreras.Find(temp => temp.IdCarrera == idCarrera);
                 return carrera;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -62,9 +62,9 @@ namespace ADSProyect.Repositories
                 lstCarreras.RemoveAt(index);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -83,9 +83,9 @@ namespace ADSProyect.Repositories
                     return 0;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
     }
