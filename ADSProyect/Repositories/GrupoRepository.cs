@@ -13,6 +13,7 @@ namespace ADSProyect.Repositories
                          Ciclo = 01, Anio = 2024}
             };
 
+        //Metodo agregar
            public int AgregarGrupo(Grupo grupo)
             {
                 try
