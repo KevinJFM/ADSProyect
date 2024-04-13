@@ -31,6 +31,7 @@ namespace ADSProyect.Controllers
                     return BadRequest(ModelState);
 
                 }
+
                 int contador = this.estudiante.AgregarEstudiante(estudiante);
 
                 if (contador > 0)

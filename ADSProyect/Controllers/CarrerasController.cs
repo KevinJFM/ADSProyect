@@ -25,7 +25,13 @@ namespace ADSProyect.Controllers
             {
                 try
                 {
-                    int contador = this.carrera.AgregarCarrera(carrera);
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+
+                }
+
+                int contador = this.carrera.AgregarCarrera(carrera);
 
                     if (contador > 0)
                     {
@@ -50,9 +56,15 @@ namespace ADSProyect.Controllers
             [HttpPut("actualizarCarrera/{idCarrera}")]
             public ActionResult<string> ActualizarCarrera([FromBody] Carrera carrera)
             {
-                try
+            try
+            {
+                if (!ModelState.IsValid)
                 {
-                    int contador = this.carrera.ModificarCarrera(carrera.IdCarrera, carrera);
+                    return BadRequest(ModelState);
+
+                }
+
+                int contador = this.carrera.ModificarCarrera(carrera.IdCarrera, carrera);
                     if (contador > 0)
                     {
                     pCodRespuesta = COD_EXITO;

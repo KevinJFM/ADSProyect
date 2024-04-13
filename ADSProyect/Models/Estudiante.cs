@@ -16,7 +16,7 @@ namespace ADSProyect.Models
         [MinLength(length: 12, ErrorMessage = "La longitud del campo no puede ser mayor a 12 caracteres.")]
         [MaxLength(length: 50, ErrorMessage = "La longitud del campo no puede ser mayor a 12 caracteres.")]
         public string CodigoEstudiante { get; set; }
-        [Required(ErrorMessage = "Este es un camporequerido")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         [MaxLength(length: 254, ErrorMessage = "La longitud del campo no puede ser mayor a 254 caracteres.")]
         [EmailAddress(ErrorMessage = "El formato del correo electronico es incorrecto")]
         public string CorreoEstudiante { get; set; }
