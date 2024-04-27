@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Runtime.Intrinsics.X86;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ADSProyect.Models
 {
+    [PrimaryKey(nameof(IdEstudiante))]
     public class Estudiante
     {
         public int IdEstudiante { get; set; }

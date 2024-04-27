@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ADSProyect.Controllers
 {
+    [ApiController]
     [Route("api/grupos/")]
     public class GruposController : ControllerBase
     {
@@ -21,17 +22,11 @@ namespace ADSProyect.Controllers
 
         [HttpPost("agregarGrupo")]
 
-        public ActionResult<string> AgregarGrupo([FromBody] Grupo grupo)
+        public ActionResult<string> AgregarGrupo( Grupo grupo)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-
-                }
-
-                int contador = this.grupo.AgregarGrupo(grupo);
+               int contador = this.grupo.AgregarGrupo(grupo);
 
                 if (contador > 0)
                 {
@@ -54,16 +49,10 @@ namespace ADSProyect.Controllers
         }
 
         [HttpPut("actualizarGrupo/{idGrupo}")]
-        public ActionResult<string> ActualizarGrupo(int idGrupo, [FromBody] Grupo grupo)
+        public ActionResult<string> ActualizarGrupo(int idGrupo, Grupo grupo)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-
-                }
-
                 int contador = this.grupo.ModificarGrupo(idGrupo, grupo);
                 if (contador > 0)
                 {
