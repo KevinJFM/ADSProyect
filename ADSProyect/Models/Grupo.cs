@@ -1,8 +1,11 @@
-﻿using ADSProyect.Validations;
+﻿using ADSProyect.Interfaces;
+using ADSProyect.Validations;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace ADSProyect.Models
 {
+    [PrimaryKey(nameof(IdGrupo))]
     public class Grupo
     {
         [CustomRequired(ErrorMessage = "Este es un campo requerido")]

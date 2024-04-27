@@ -10,5 +10,10 @@ namespace ADSProyect.DB
         }
 
         public DbSet<Estudiante> Estudiante { get; set; }
+        public DbSet<Carrera> Carrrera { get; set; }
+        public DbSet<Grupo> Grupo { get; set; }
+        public DbSet<Materia> Materia { get; set; }
+        public DbSet<Profesor> Profesor { get; set; }
+
     }
 }
