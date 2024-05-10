@@ -1,4 +1,6 @@
-﻿using ADSProyect.Interfaces;
+﻿using ADSProyect.DB;
+using ADSProyect.Interfaces;
+using ADSProyect.Migrations;
 using ADSProyect.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,22 +8,30 @@ namespace ADSProyect.Repositories
 {
     public class ProfesorRepository : IProfesor
     {
-        private List<Profesor> lstProfesores = new List<Profesor>
+        /*private List<Profesor> lstProfesores = new List<Profesor>
         {
             new Profesor { IdProfesor = 1, NombresProfesor = "Juan",
                            ApellidosProfesor = "Pérez", 
                            Email = "juan.perez@example.com" }
-        };
+        };*/
+        private readonly ApplicationDbContext applicationDbContext;
+
+        public ProfesorRepository(ApplicationDbContext applicationDbContext)
+        {
+            this.applicationDbContext = applicationDbContext;
+        }
 
         public int AgregarProfesor(Profesor profesor)
         {
             try
             {
-                if (lstProfesores.Count > 0)
-                {
-                    profesor.IdProfesor = lstProfesores.Last().IdProfesor + 1;
-                }
-                lstProfesores.Add(profesor);
+                /* if (lstProfesores.Count > 0)
+                 {
+                     profesor.IdProfesor = lstProfesores.Last().IdProfesor + 1;
+                 }
+                 lstProfesores.Add(profesor);*/
+                applicationDbContext.Profesor.Add(profesor);
+                applicationDbContext.SaveChanges();
 
                 return profesor.IdProfesor;
             }
@@ -35,9 +45,14 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                int indice = lstProfesores.FindIndex(tmp => tmp.IdProfesor == idProfesor);
+                /*int indice = lstProfesores.FindIndex(tmp => tmp.IdProfesor == idProfesor);
 
-                lstProfesores[indice] = profesor;
+                lstProfesores[indice] = profesor;*/
+                var item = applicationDbContext.Profesor.SingleOrDefault(x => x.IdProfesor == idProfesor);
+
+                applicationDbContext.Entry(item).CurrentValues.SetValues(profesor);
+
+                applicationDbContext.SaveChanges();
 
                 return idProfesor;
             }
@@ -51,9 +66,14 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                int indice = lstProfesores.FindIndex(tmp => tmp.IdProfesor == idProfesor);
+                /*int indice = lstProfesores.FindIndex(tmp => tmp.IdProfesor == idProfesor);
 
-                lstProfesores.RemoveAt(indice);
+                lstProfesores.RemoveAt(indice);*/
+                var item = applicationDbContext.Profesor.SingleOrDefault(x => x.IdProfesor == idProfesor);
+
+                applicationDbContext.Profesor.Remove(item);
+
+                applicationDbContext.SaveChanges();
 
                 return true;
             }
@@ -67,7 +87,9 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                Profesor profesor = lstProfesores.FirstOrDefault(tmp => tmp.IdProfesor == idProfesor);
+                //Profesor profesor = lstProfesores.FirstOrDefault(tmp => tmp.IdProfesor == idProfesor);
+                var profesor = applicationDbContext.Profesor.SingleOrDefault(x => x.IdProfesor == idProfesor);
+
                 return profesor;
             }
             catch (Exception)
@@ -81,7 +103,8 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                return lstProfesores;
+                //return lstProfesores;
+                return applicationDbContext.Profesor.ToList();
             }
             catch (Exception)
             {

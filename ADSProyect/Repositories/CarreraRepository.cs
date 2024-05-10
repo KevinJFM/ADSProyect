@@ -1,4 +1,6 @@
-﻿using ADSProyect.Interfaces;
+﻿using ADSProyect.DB;
+using ADSProyect.Interfaces;
+using ADSProyect.Migrations;
 using ADSProyect.Models;
 
 namespace ADSProyect.Repositories
@@ -6,21 +8,30 @@ namespace ADSProyect.Repositories
     public class CarreraRepository : ICarrera
     {
 
-        private List<Carrera> lstCarreras = new List<Carrera>
+        /*private List<Carrera> lstCarreras = new List<Carrera>
         {
             new Carrera { IdCarrera = 1,
                            NombreCarrera = "Ingenieria en Sistemas Computacionales",
                            CodigoCarrera = "ISC"}
-        };
+        };*/
+        private readonly ApplicationDbContext applicationDbContext;
+        public CarreraRepository(ApplicationDbContext applicationDbContext)
+        {
+            this.applicationDbContext = applicationDbContext;
+        }
+
         public int AgregarCarrera(Carrera carrera)
         {
             try
             {
-                if (lstCarreras.Count > 0)
+                /*if (lstCarreras.Count > 0)
                 {
                     carrera.IdCarrera = lstCarreras.Last().IdCarrera + 1;
                 }
-                lstCarreras.Add(carrera);
+                lstCarreras.Add(carrera);*/
+                applicationDbContext.Carrrera.Add(carrera);
+                applicationDbContext.SaveChanges();
+
                 return carrera.IdCarrera;
             }
             catch (Exception)
@@ -29,24 +40,28 @@ namespace ADSProyect.Repositories
             }
         }
 
-        public List<Carrera> ConsultarCarreras()
+        public int ActualizarCarrera(int idCarrera, Carrera carrera)
         {
             try
             {
-                return lstCarreras;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+                /*int index = lstCarreras.FindIndex(temp => temp.IdCarrera == idCarrera);
+                if (index != -1)
+                {
+                    lstCarreras[index] = carrera;
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }*/
 
-        public Carrera ConsultarCarreraPorID(int idCarrera)
-        {
-            try
-            {
-                Carrera carrera = lstCarreras.Find(temp => temp.IdCarrera == idCarrera);
-                return carrera;
+                var item = applicationDbContext.Carrrera.SingleOrDefault(x => x.IdCarrera == idCarrera);
+
+                applicationDbContext.Entry(item).CurrentValues.SetValues(carrera);
+
+                applicationDbContext.SaveChanges();
+
+                return idCarrera;
             }
             catch (Exception)
             {
@@ -58,8 +73,14 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                int index = lstCarreras.FindIndex(temp => temp.IdCarrera == idCarrera);
-                lstCarreras.RemoveAt(index);
+                /*int index = lstCarreras.FindIndex(temp => temp.IdCarrera == idCarrera);
+                lstCarreras.RemoveAt(index);*/
+                var item = applicationDbContext.Carrrera.SingleOrDefault(x => x.IdCarrera == idCarrera);
+
+                applicationDbContext.Carrrera.Remove(item);
+
+                applicationDbContext.SaveChanges();
+
                 return true;
             }
             catch (Exception)
@@ -68,20 +89,27 @@ namespace ADSProyect.Repositories
             }
         }
 
-        public int ModificarCarrera(int idCarrera, Carrera carrera)
+        public List<Carrera> ConsultarTodasLasCarreras()
         {
             try
             {
-                int index = lstCarreras.FindIndex(temp => temp.IdCarrera == idCarrera);
-                if (index != -1)
-                {
-                    lstCarreras[index] = carrera;
-                    return 1;
-                }
-                else
-                {
-                    return 0;
-                }
+                // return lstCarreras;
+                return applicationDbContext.Carrrera.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public Carrera ConsultarCarreraPorID(int idCarrera)
+        {
+            try
+            {
+
+                //Carrera carrera = lstCarreras.Find(temp => temp.IdCarrera == idCarrera);
+                var carrera = applicationDbContext.Carrrera.SingleOrDefault(x => x.IdCarrera == idCarrera);
+                return carrera;
             }
             catch (Exception)
             {

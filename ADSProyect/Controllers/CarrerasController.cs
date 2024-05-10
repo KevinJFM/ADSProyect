@@ -64,7 +64,7 @@ namespace ADSProyect.Controllers
 
                 }
 
-                int contador = this.carrera.ModificarCarrera(carrera.IdCarrera, carrera);
+                int contador = this.carrera.ActualizarCarrera(carrera.IdCarrera, carrera);
                     if (contador > 0)
                     {
                     pCodRespuesta = COD_EXITO;
@@ -140,7 +140,7 @@ namespace ADSProyect.Controllers
             {
                 try
                 {
-                    List<Carrera> lstCarreras = this.carrera.ConsultarCarreras();
+                    List<Carrera> lstCarreras = this.carrera.ConsultarTodasLasCarreras();
                     return Ok(lstCarreras);
                 }
                 catch (Exception)

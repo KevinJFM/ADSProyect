@@ -53,7 +53,7 @@ namespace ADSProyect.Controllers
         {
             try
             {
-                int contador = this.grupo.ModificarGrupo(idGrupo, grupo);
+                int contador = this.grupo.ActualizarGrupo(idGrupo, grupo);
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
@@ -129,7 +129,7 @@ namespace ADSProyect.Controllers
         {
             try
             {
-                List<Grupo> lstGrupos = this.grupo.ConsultarGrupos();
+                List<Grupo> lstGrupos = this.grupo.ConsultarTodosLosGrupos();
                 return Ok(lstGrupos);
             }
             catch (Exception)

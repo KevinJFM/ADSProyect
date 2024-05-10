@@ -1,26 +1,37 @@
-﻿using ADSProyect.Interfaces;
+﻿using ADSProyect.DB;
+using ADSProyect.Interfaces;
+using ADSProyect.Migrations;
 using ADSProyect.Models;
 
 namespace ADSProyect.Repositories
 {
     public class EstudianteRepository : IEstudiante
     {
-        private List<Estudiante> lstEstudiantes = new List<Estudiante>
+        /*private List<Estudiante> lstEstudiantes = new List<Estudiante>
         {
             new Estudiante{ IdEstudiante = 1, NombresEstudiante = "Kevin Javier",
             ApellidosEstudiante = "Flores Mendoza", CodigoEstudiante = "FM19I04001",
             CorreoEstudiante = "fm19i04001@usonsonate.ed.sv"}
-        };
+        };*/
+        private readonly ApplicationDbContext applicationDbContext;
+
+        public EstudianteRepository(ApplicationDbContext applicationDbContext)
+        {
+            this.applicationDbContext = applicationDbContext;
+        }
 
         public int AgregarEstudiante(Estudiante estudiante)
         {
             try
             {
-                if (lstEstudiantes.Count > 0)
+                /*if (lstEstudiantes.Count > 0)
                 {
                     estudiante.IdEstudiante = lstEstudiantes.Last().IdEstudiante + 1;
                 }
-                lstEstudiantes.Add(estudiante);
+                lstEstudiantes.Add(estudiante);*/
+
+                applicationDbContext.Estudiante.Add(estudiante);    
+                applicationDbContext.SaveChanges();
 
                 return estudiante.IdEstudiante;
             }
@@ -34,9 +45,11 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                int indice = lstEstudiantes.FindIndex(tmp => tmp.IdEstudiante == idEstudiante);
+                var item = applicationDbContext.Estudiante.SingleOrDefault(x => x.IdEstudiante == idEstudiante);
 
-                lstEstudiantes[indice] = estudiante;
+                applicationDbContext.Entry(item).CurrentValues.SetValues(estudiante);  
+                
+                applicationDbContext.SaveChanges();
 
                 return idEstudiante;
             }
@@ -50,9 +63,14 @@ namespace ADSProyect.Repositories
         {
             try
             {
-                int indice = lstEstudiantes.FindIndex(tmp => tmp.IdEstudiante == idEstudiante);
+                /*int indice = lstEstudiantes.FindIndex(tmp => tmp.IdEstudiante == idEstudiante);
 
-                lstEstudiantes.RemoveAt(indice);
+                lstEstudiantes.RemoveAt(indice);*/
+                var item = applicationDbContext.Estudiante.SingleOrDefault(x => x.IdEstudiante == idEstudiante);
+
+                applicationDbContext.Estudiante.Remove(item);
+
+                applicationDbContext.SaveChanges();
 
                 return true;
             }
@@ -67,8 +85,8 @@ namespace ADSProyect.Repositories
 
             try
             {
-                Estudiante estudiante = lstEstudiantes.FirstOrDefault(tmp => tmp.IdEstudiante == idEstudiante);
-
+                //Estudiante estudiante = lstEstudiantes.FirstOrDefault(tmp => tmp.IdEstudiante == idEstudiante);
+                var estudiante = applicationDbContext.Estudiante.SingleOrDefault(x => x.IdEstudiante == idEstudiante);
 
                 return estudiante;
             }
@@ -83,7 +101,8 @@ namespace ADSProyect.Repositories
         {
             try 
             {
-                return lstEstudiantes;
+                //return lstEstudiantes;
+                return applicationDbContext.Estudiante.ToList();
             }
             catch (Exception)
             {

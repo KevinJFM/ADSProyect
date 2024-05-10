@@ -8,7 +8,7 @@ namespace ADSProyect.Models
     [PrimaryKey(nameof(IdGrupo))]
     public class Grupo
     {
-        [CustomRequired(ErrorMessage = "Este es un campo requerido")]
+
         public int IdGrupo { get; set; }
         [CustomRequired(ErrorMessage = "Este es un campo requerido")]
         public int IdCarrera { get; set; }

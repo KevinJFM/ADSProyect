@@ -5,9 +5,9 @@ namespace ADSProyect.Interfaces
     public interface ICarrera
     {
         public int AgregarCarrera(Carrera carrera);
-        public int ModificarCarrera(int idCarrera, Carrera carrera);
+        public int ActualizarCarrera(int idCarrera, Carrera carrera);
         public bool EliminarCarrera(int idCarrera);
-        public List<Carrera> ConsultarCarreras();
+        public List<Carrera> ConsultarTodasLasCarreras();
         public Carrera ConsultarCarreraPorID(int idCarrera);
     }
 }

@@ -17,15 +17,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Confugurando inyeccion de dependencias
-builder.Services.AddSingleton<IEstudiante, EstudianteRepository>();
+builder.Services.AddScoped<IEstudiante, EstudianteRepository>();
 
-builder.Services.AddSingleton<ICarrera, CarreraRepository>();
+builder.Services.AddScoped<ICarrera, CarreraRepository>();
 
-builder.Services.AddSingleton<IMateria, MateriaRepository>();
+builder.Services.AddScoped<IMateria, MateriaRepository>();
 
-builder.Services.AddSingleton<IProfesor, ProfesorRepository>();
+builder.Services.AddScoped<IProfesor, ProfesorRepository>();
 
-builder.Services.AddSingleton<IGrupo, GrupoRepository>();
+builder.Services.AddScoped<IGrupo, GrupoRepository>();
 
 var app = builder.Build();
 
