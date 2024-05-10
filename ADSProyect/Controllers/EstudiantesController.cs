@@ -75,7 +75,7 @@ namespace ADSProyect.Controllers
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro actualizado con exito";
+                    pMensajeUsuario = "Estudiante actualizado correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
 
                 }
@@ -83,7 +83,7 @@ namespace ADSProyect.Controllers
                 {
 
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrio un problema al actualizar el registro";
+                    pMensajeUsuario = "Error al actualizar estudiante";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 return Ok(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
@@ -107,7 +107,7 @@ namespace ADSProyect.Controllers
                 if (eliminado)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro eliminado con exito";
+                    pMensajeUsuario = "Estudiante eliminado correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
 
                 }
@@ -115,7 +115,7 @@ namespace ADSProyect.Controllers
                 {
 
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrio un problema al eliminar el registro";
+                    pMensajeUsuario = "Error al eliminar estudiante";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 return Ok(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
@@ -146,7 +146,7 @@ namespace ADSProyect.Controllers
                 {
 
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "No se encontraron datos del estudiante";
+                    pMensajeUsuario = "Estudiante no encontrado";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 return Ok(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });

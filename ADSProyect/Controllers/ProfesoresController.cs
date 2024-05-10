@@ -71,13 +71,13 @@ namespace ADSProyect.Controllers
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro actualizado con éxito";
+                    pMensajeUsuario = "Profesor actualizado correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrió un problema al actualizar el registro";
+                    pMensajeUsuario = "Error al actualizar profesor";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
 
@@ -99,13 +99,13 @@ namespace ADSProyect.Controllers
                 if (eliminado)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro eliminado con éxito";
+                    pMensajeUsuario = "Profesor eliminado correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrió un problema al eliminar el registro";
+                    pMensajeUsuario = "Error al eliminar profesor";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
 
@@ -131,7 +131,7 @@ namespace ADSProyect.Controllers
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "No se encontraron datos del profesor";
+                    pMensajeUsuario = "Profesor no encontrado";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
 
                     return NotFound(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });

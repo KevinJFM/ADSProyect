@@ -36,13 +36,13 @@ namespace ADSProyect.Controllers
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro insertado con éxito";
+                    pMensajeUsuario = "Materia agregado correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrió un problema al insertar el registro";
+                    pMensajeUsuario = "Error al agregar materia";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
 
@@ -70,13 +70,13 @@ namespace ADSProyect.Controllers
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro actualizado con éxito";
+                    pMensajeUsuario = "Materia actualizado correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrió un problema al actualizar el registro";
+                    pMensajeUsuario = "Error al actualizar materia";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
 
@@ -98,13 +98,13 @@ namespace ADSProyect.Controllers
                 if (eliminado)
                 {
                     pCodRespuesta = COD_EXITO;
-                    pMensajeUsuario = "Registro eliminado con éxito";
+                    pMensajeUsuario = "Materia eliminada correctamente";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "Ocurrió un problema al eliminar el registro";
+                    pMensajeUsuario = "Error al eliminar materia";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                 }
 
@@ -130,7 +130,7 @@ namespace ADSProyect.Controllers
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "No se encontraron datos de la materia";
+                    pMensajeUsuario = "Materia no encontrado";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
 
                     return NotFound(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
