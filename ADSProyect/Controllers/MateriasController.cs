@@ -142,7 +142,7 @@ namespace ADSProyect.Controllers
             }
         }
 
-        [HttpGet("obtenerTodasLasMaterias")]
+        [HttpGet("obtenerMaterias")]
         public ActionResult<List<Materia>> ObtenerTodasLasMaterias()
         {
             try

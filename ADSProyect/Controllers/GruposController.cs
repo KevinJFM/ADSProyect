@@ -100,7 +100,7 @@ namespace ADSProyect.Controllers
             }
         }
 
-        [HttpGet("consultarGrupoPorID/{idGrupo}")]
+        [HttpGet("obtenerGrupoID/{idGrupo}")]
         public ActionResult<Grupo> ConsultarGrupoPorID(int idGrupo)
         {
             try
@@ -124,7 +124,7 @@ namespace ADSProyect.Controllers
             }
         }
 
-        [HttpGet("consultarGrupos")]
+        [HttpGet("obtenerGrupos")]
         public ActionResult<List<Grupo>> ConsultarGrupos()
         {
             try

@@ -111,7 +111,7 @@ namespace ADSProyect.Controllers
             }
         }
 
-        [HttpGet("consultarCarreraPorID/{idCarrera}")]
+        [HttpGet("obtenerCarreraPorID/{idCarrera}")]
         public ActionResult<Carrera> ConsultarCarreraPorID(int idCarrera)
         {
             try
@@ -135,7 +135,7 @@ namespace ADSProyect.Controllers
             }
         }
 
-        [HttpGet("consultarCarreras")]
+        [HttpGet("obtenerCarreras")]
             public ActionResult<List<Carrera>> ConsultarCarreras()
             {
                 try
